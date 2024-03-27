@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo SECRET_REPO: ${{ secrets.SECRET_REPO }}
 
   deploy-dev:
     needs: build
