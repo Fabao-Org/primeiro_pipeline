@@ -37,6 +37,9 @@ jobs:
           echo SECRET_REPO: ${{ secrets.SECRET_REPO }}
           echo SECRET_DEV: ${{ secrets.SECRET_DEV }}
           echo SECRET_ORG: ${{ secrets.SECRET_ORG }}
+          echo VARIAVEL_REPO: ${{ vars.VARIAVEL_REPO }}
+          echo VARIAVEL_DEV: ${{ vars.VARIAVEL_DEV }}
+          echo VARIAVEL_ORG: ${{ vars.VARIAVEL_ORG }}
 
   deploy-dev:
     needs: build
@@ -63,3 +66,6 @@ jobs:
           echo SECRET_REPO: ${{ secrets.SECRET_REPO }}
           echo SECRET_DEV: ${{ secrets.SECRET_DEV }}
           echo SECRET_ORG: ${{ secrets.SECRET_ORG }}
+          echo VARIAVEL_REPO: ${{ vars.VARIAVEL_REPO }}
+          echo VARIAVEL_DEV: ${{ vars.VARIAVEL_DEV }}
+          echo VARIAVEL_ORG: ${{ vars.VARIAVEL_ORG }}
