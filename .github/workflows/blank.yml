@@ -35,6 +35,8 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo SECRET_REPO: ${{ secrets.SECRET_REPO }}
+          echo SECRET_DEV: ${{ secrets.SECRET_DEV }}
+          echo SECRET_ORG: ${{ secrets.SECRET_ORG }}
 
   deploy-dev:
     needs: build
@@ -58,3 +60,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          echo SECRET_REPO: ${{ secrets.SECRET_REPO }}
+          echo SECRET_DEV: ${{ secrets.SECRET_DEV }}
+          echo SECRET_ORG: ${{ secrets.SECRET_ORG }}
