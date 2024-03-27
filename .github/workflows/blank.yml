@@ -44,6 +44,6 @@ jobs:
   deploy-dev:
     needs: build
 
-    uses: Fabao-Org/pipeline_templates/.github/workflows/demo-deploy.yml@main
+    uses: fabao-org/pipeline_templates/.github/workflows/demo-deploy.yml@main
     with:
       variavel-demo: "Demo Dev"
