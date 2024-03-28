@@ -12,6 +12,10 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      valor-exemplo:
+        required: true
+        type: string
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -43,8 +47,6 @@ jobs:
 
   deploy-dev:
     needs: build
-
-    uses: Fabao-Org/pipeline_templates/.github/workflows/demo-deploy.yml@main
-    
+    uses: Fabao-Org/pipeline_templates/.github/workflows/demo-deploy.yml@main    
     with:
       variavel-demo: "Demo Dev"
